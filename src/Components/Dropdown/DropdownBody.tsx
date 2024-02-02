@@ -5,9 +5,11 @@ import {
   ErrorImage,
   LoadingAnimation,
   LoadingContainer,
+  NotFoundContainer,
+  NotFoundImage,
 } from "./DropdownStyle";
 import DropdownBodyItem from "../DropdownBody/DropdownBodyItem";
-import { Loading } from "../../assets/animation";
+import { Loading, NotFound } from "../../assets/animation";
 import { ErrorImages } from "../../assets/images";
 import KeyOperations from "../../hooks/KeyOperations";
 
@@ -18,6 +20,7 @@ const DropdownBody = ({
   updateSearchControl,
   searchControl,
 }: DropdownBody) => {
+  console.log("data: ", data);
   const { exportKeyOperation } = KeyOperations({
     data: data,
     searchControl: searchControl,
@@ -33,13 +36,17 @@ const DropdownBody = ({
         <ErrorContainer>
           <ErrorImage src={ErrorImages} />
         </ErrorContainer>
-      ) : (
+      ) : data.length > 0 ? (
         <DropdownBodyItem
           data={data}
           selectedIndex={exportKeyOperation.selectedIndex!}
           searchControl={searchControl}
           updateSearchControl={updateSearchControl}
         />
+      ) : (
+        <NotFoundContainer>
+          <NotFoundImage src={NotFound} />
+        </NotFoundContainer>
       )}
     </DropdownBodyContainer>
   );

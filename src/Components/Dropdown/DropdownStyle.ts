@@ -90,6 +90,20 @@ const ErrorImage = styled.img`
   width: 170px;
 `;
 
+const NotFoundContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+`;
+
+const NotFoundImage = styled.img`
+  height: 170px;
+  width: 170px;
+  border-radius: 10px;
+`;
+
 export {
   DropdownContainer,
   DropdownRow,
@@ -103,4 +117,6 @@ export {
   LoadingAnimation,
   ErrorContainer,
   ErrorImage,
+  NotFoundContainer,
+  NotFoundImage,
 };

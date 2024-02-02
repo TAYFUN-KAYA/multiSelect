@@ -1,3 +1,3 @@
 import Loading from "./loadings.gif";
-
-export { Loading };
+import NotFound from "./notfound.gif";
+export { Loading, NotFound };
