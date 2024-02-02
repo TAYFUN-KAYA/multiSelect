@@ -8,12 +8,14 @@ const SearchBarKeyOperation = ({
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Backspace") {
-        const allSelected = searchControl.selectedValues;
-        const selectedLength = allSelected.length;
-        if (selectedLength > 0) {
-          allSelected.splice(selectedLength - 1, 1);
+        if (searchControl.filter === "") {
+          const allSelected = searchControl.selectedValues;
+          const selectedLength = allSelected.length;
+          if (selectedLength > 0) {
+            allSelected.splice(selectedLength - 1, 1);
+          }
+          updateSearchControl({ selectedValues: [...allSelected] });
         }
-        updateSearchControl({ selectedValues: [...allSelected] });
       }
     },
     [searchControl, updateSearchControl]
