@@ -1,10 +1,10 @@
 import { useQuery } from "@apollo/client";
 import { useReducer } from "react";
 import { SearchControllerTypes } from "../types/Search/SearchControllerTypes";
-import SearchBar from "../Components/SearchBar/SearchBar";
-import DropdownBody from "../Components/Dropdown/DropdownBody";
+import SearchBar from "../components/SearchBar/SearchBar";
+import DropdownBody from "../components/Dropdown/DropdownBody";
 import { Container } from "./CustomDropdownPageStyle";
-import { DATA_QUERY } from "../Components/services/querys/DataQuery";
+import { DATA_QUERY } from "../services/querys/DataQuery";
 import ClickCheck from "../hooks/ClickCheck";
 
 const InitialSearchController = {
