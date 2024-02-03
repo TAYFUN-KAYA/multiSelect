@@ -8,6 +8,9 @@ const SearchInputs = styled.input`
   border: none;
   outline: none;
   color: #000000;
+  touch-action: manipulation;
+  max-width: 100%;
+  user-zoom: fixed;
 `;
 
 const SearchInputContainer = styled.div`
