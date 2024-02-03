@@ -25,6 +25,7 @@ const DropdownItem = ({
       });
     }
   };
+  
 
   const handleRemoveItem = () => {
     const allSelecetedValues: SelectedValueTypes[] =
