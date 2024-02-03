@@ -28,6 +28,7 @@
 
 #generalContainer {
   width: 300px;
+  margin-bottom: 130px;
 }
 
 #dropdownContainer {
@@ -39,6 +40,7 @@
 @media only screen and (min-width: 600px) {
   #generalContainer {
     width: 400px;
+    margin: auto;
   }
 
   #dropdownContainer {
