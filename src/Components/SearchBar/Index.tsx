@@ -5,7 +5,7 @@ import { SearchBarBody, SearchBarContainer } from "./SearchBarStyle";
 import SearchBarButtonGroup from "../SearchBarButtonGroup/SearchBarButtonGroup";
 import SearchBarKeyOperation from "../../hooks/SearchBarKeyOperation";
 
-const SearchBar = ({ searchControl, updateSearchControl }: SearchBarTypes) => {
+const SearchBars = ({ searchControl, updateSearchControl }: SearchBarTypes) => {
   SearchBarKeyOperation({
     searchControl: searchControl,
     updateSearchControl: updateSearchControl,
@@ -30,4 +30,4 @@ const SearchBar = ({ searchControl, updateSearchControl }: SearchBarTypes) => {
   );
 };
 
-export default SearchBar;
+export default SearchBars;

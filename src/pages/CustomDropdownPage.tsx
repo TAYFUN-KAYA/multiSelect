@@ -4,8 +4,8 @@ import { SearchControllerTypes } from "../types/Search/SearchControllerTypes";
 import { Container } from "./CustomDropdownPageStyle";
 import { DATA_QUERY } from "../services/querys/DataQuery";
 import ClickCheck from "../hooks/ClickCheck";
-import SearchBar from "../components/SearchBar/Index";
-import DropdownBody from "../components/Dropdown/DropdownBody";
+import SearchBars from "../components/SearchBar/Index";
+import DropdownBody from "../components/dropdown/DropdownBody";
 
 const InitialSearchController = {
   isOpen: false,
@@ -38,7 +38,7 @@ const CustomDropdownPage = () => {
 
   return (
     <Container ref={hookExport.containerRef} id="generalContainer">
-      <SearchBar
+      <SearchBars
         updateSearchControl={updateSearchControl}
         searchControl={searchControl}
       />

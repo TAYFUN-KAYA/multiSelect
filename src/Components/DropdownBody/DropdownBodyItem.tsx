@@ -1,7 +1,7 @@
 import { Children } from "react";
 import { DropdownBody } from "../../types/Dropdown/DropdownBody";
 import { SelectedValueTypes } from "../../types/SelectedValues";
-import DropdownItem from "../Dropdown/DropdownItem";
+import DropdownItem from "../dropdown/DropdownItem";
 
 const DropdownBodyItem = ({
   selectedIndex,
