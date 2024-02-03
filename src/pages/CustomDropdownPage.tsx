@@ -1,11 +1,11 @@
 import { useQuery } from "@apollo/client";
 import { useReducer } from "react";
 import { SearchControllerTypes } from "../types/Search/SearchControllerTypes";
-import SearchBar from "../components/SearchBar/SearchBar";
-import DropdownBody from "../components/Dropdown/DropdownBody";
 import { Container } from "./CustomDropdownPageStyle";
 import { DATA_QUERY } from "../services/querys/DataQuery";
 import ClickCheck from "../hooks/ClickCheck";
+import SearchBar from "../components/SearchBar/SearchBar";
+import DropdownBody from "../components/Dropdown/DropdownBody";
 
 const InitialSearchController = {
   isOpen: false,
