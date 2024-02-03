@@ -21,7 +21,8 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: url('./assets/images/background.png');
+  /* background: url('./assets/images/background.png'); */
+  background: url('https://images.alphacoders.com/133/1330376.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
